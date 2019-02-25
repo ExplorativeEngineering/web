@@ -1,0 +1,82 @@
+intfercolors
+
+Explorative.Engineering              
+Engineering Design Services SupportingScientific Research in Woods Hole
+and Beyond *Mechanical Design and Fabrication
+*
+
+  * CAD design, modeling, 3D printing, machining and fabrication of
+    mechanical/optical components
+  * systems design and development including hardware and software
+  * engineering analysis and research
+  * troubleshooting and repairs
+
+	
+
+
+      Recent Projectsin Design and Fabrication
+
+Fluorescence Polarization on DiSPIM
+<file:///C:/_Work/Github/web/mbl/Fluorescence%20Polarization%20on%20DiSPIM.html>: 
+Design and fabrication of 3D printed and machined hardware components to
+add liquid crystal variable retarders to DiSPIM microscope for
+fluorescence polarization imaging at MBL.
+
+Design of Embryo Incubator and other apparatus for Cephalopod Operations
+<file:///C:/_Work/Github/web/mbl/Cephalopod.html>at the Marine
+Biological Laboratory.
+
+
+      Custom Microscope adapters for <http://www.OpenPolScope.org>  at MBL.
+
+*Imaging, Instrumentation and Informatics*
+
+  *         software design and development: architectures, interface
+    and systems design
+  *         bioimage informatics: ImageJ/FIJI programming and
+    customization, metadata management
+  *         imaging and optical systems, biological microscopy systems
+    customization/adaptation
+  *         hardware interfacing: instrument control with Micromanager,
+    imaging sensors, motion control
+
+
+consultant, facilitator and mediator,
+
+project planning and process improvement
+
+
+Grant B. Harris, Consulting Engineer
+
+    Scientific Informatics Analyst at the Marine Biological Laboratory
+    for 15 years <mbl/ADLC/GBH%20at%20MBL.html>.
+    Software design and hardware interfacing for biological microscopy
+    and optics. 
+    Founder of software design and business process consulting firm,
+    Workframe <gbh/Workframe%20Summary.pdf>, for 15 years. 
+    Mechanical engineering degree from MIT.   
+    Mariner, blue water sailor, navigator, mechanic, rigger; technical
+    support engineer on research ships <marine/index.html>.
+
+    GBH@Explorative.Engineering  508-524-1709
+
+
+We also offer Marine Services
+<file:///C:/_Work/Github/web/marine/index.html>
+
+
+
+/Explorative.Engineering  Woods Hole, MA 02543 /
+intfercolors
+
+     
+
+Links to Science in Woods Hole:
+
+Marine Biological Laboratory <http://www.mbl.edu/>
+Woods Hole Oceanographic Institute <http://www.whoi.edu/>
+US Geologic Survey <https://www.usgs.gov/centers/whcmsc>
+Woods Hole Research Center <http://www.whrc.org/>
+NOAA Fisheries <http://www.nefsc.nmfs.gov/nefsc/woodshole/>
+SEA: Sea Education Association <http://www.sea.edu/>
+Children's Schools of Science <http://childrensschoolofscience.org/>
