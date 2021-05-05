@@ -1,0 +1,557 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<title>PLM Relevent Papers</title>
+<basefont face="Verdana" size="2">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+  body, td { font-family: Verdana; font-size: 10pt; }
+  #title a, #footer a { color: #304270; text-decoration: underline; }
+  #title a:hover, #footer a:hover { color: blue; }
+  #title { font-weight: bold; }
+  #date { text-align: right; margin-left: 10px; }
+  #author { text-align: right; font-style: italic; }
+  #auto { font-style: italic; }
+  #manual { font-weight: bold; }
+  #note { border: 2px solid #cee0f5; }
+  #notebar td, #footer td { color: #304270; padding: 2px; padding-left: 4px; padding-right: 4px; background: #cee0f5; font-size: 8pt; }
+  #footer td { font-size: 7pt; }
+  #download { text-align: right; margin-left: 10px; }
+  #body { padding: 15px; }
+  #body h1, #body h2, #body h3 { margin-top: 0px; margin-bottom: 10px; }
+  #body h1 { font-size: 1.8em; }
+  #body h2 { font-size: 1.5em; }
+  #body h3 { font-size: 1.2em; }
+</style>
+</head>
+<body>
+
+<!-- Begin note[101781] -->
+
+<table id="note" cellpadding="0" cellspacing="0" width="100%">
+
+<!-- Notebar [101781] begin -->
+
+<tbody><tr><td>
+<table id="notebar" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr valign="top">
+  <td id="title">PLM Relevent Papers&nbsp;</td>
+  <td id="date">4/29/2021 10:38 PM</td>
+</tr>
+<tr valign="top">
+  <td id="categories">
+    &nbsp;</td>
+  <td id="author">&nbsp;</td>
+</tr>
+</tbody></table>
+</td></tr>
+
+<!-- Notebar [101781] end -->
+
+<tr><td>
+
+<table id="body" cellpadding="10" cellspacing="0" width="100%">
+<tbody><tr><td>
+
+<!-- Note [101781] content begin -->
+
+
+<h1>Research closely related to the PolLFM Project,<br>
+specfically, Microscopic Light Field Reconstruction with DL<br>
+</h1>
+<p><br>
+</p>
+<p>algorithm unrolling, <br>
+</p>
+<p>EPI - Epipolar Plane Image</p>
+
+<h2>LFMNet</h2>
+<p><span style="font-style: italic;">We are </span><span style="font-style: italic;">curren</span><span style="font-style: italic;">tly using this for exploring </span><span style="font-style: italic;">machine </span><span style="font-style: italic;">learning for </span><span style="font-style: italic;">Microscopic Light Field Reconstructio</span><span style="font-style: italic;">n. (May, 2021)</span><br>
+</p>
+
+<p><span style="font-weight: bold;"><a href="https://arxiv.org/pdf/2003.11004v1.pdf">Learning to Reconstruct Confocal Microscopy Stacks from Single Light Field Images</a></span> &nbsp;Mar. 2020 ∙ by <a href="https://deepai.org/profile/josue-page">Josue Page</a>, et al.</p>
+<p style="margin-left: 40px;">We present a novel deep learning approach 
+to reconstruct confocal microscopy stacks from single light field 
+images. To perform the reconstruction, we introduce the LFMNet, a novel 
+neural network architecture inspired by the U-Net design. It is able to 
+reconstruct with high-accuracy a 112x112x57.6 μm3 &nbsp;volume 
+(1287x1287x64 voxels) in 50ms given a single light field image of 
+1287x1287 pixels, thus dramatically reducing 720-fold the time for 
+confocal scanning of assays at the same volumetric resolution and 
+64-fold the required storage. To prove the applicability in life 
+sciences, our approach is evaluated both quantitatively and 
+qualitatively on mouse brain slices with fluorescently labelled blood 
+vessels. Because of the drastic reduction in scan time and storage 
+space, our setup and method are directly applicable to real-time in vivo
+ 3D microscopy. We provide analysis of the optical design, of the 
+network architecture and of our training procedure to optimally 
+reconstruct volumes for a given target depth range. To train our 
+network, we built a data set of 362 light field images of mouse brain 
+blood vessels and the corresponding aligned set of 3D confocal scans, 
+which we use as ground truth. The data set will be made available for 
+research purposes.</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">A second contribution in this work is the 
+design of the LFMNet. To better model the 4D nature of the input LF 
+image, the first layer of our network is a 4D convolution, whose output 
+is reshaped as an image and then fed as input to a modified U-Net 
+architecture, where the channels are mapped to the depth axis. Moreover,
+ the network is designed to be fully convolutional, so that it can 
+process input LF images of different sizes, and to have a limited 
+receptive field to avoid overfitting.</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Pearson correlation coefficient</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Light Field Microscopy <a href="http://cvg.unibe.ch/media/project/page/LFMNet/index.html">project</a> page</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><a href="https://github.com/pvjosue/LFMNet">https://github.com/pvjosue/LFMNet</a></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">&nbsp;</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><img src="images%5C0000@101781_clip_image002.jpg" border="0" height="106" width="376"></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">&nbsp;</p>
+<div style="margin-left: 40px;">
+</div>
+<h2 style="margin-left: 40px;"><img src="images%5C0001@101781_clip_image004.jpg" border="0" height="134" width="360"></h2>
+<div style="margin-left: 40px;">
+</div>
+<div style="margin-left: 40px;">
+</div>
+<h2><br>
+</h2>
+<h2>HyLFM (Prevedel)</h2>
+<p>Prevedel</p>
+
+
+<p style="margin-left: 40px;"><span style="font-weight: bold;"><a href="https://www.biorxiv.org/content/10.1101/2020.07.30.228924v2.abstract">Deep learning-enhanced light-field imaging with continuous validation</a></span><span style="font-weight: bold;">.</span>
+ &nbsp;&nbsp;Nils Wagner, Fynn Beuttenmueller, Nils Norlin, Jakob 
+Gierten, Joachim Wittbrodt, Martin Weigert, Lars Hufnagel, Robert 
+Prevedel, Anna Kreshuk. &nbsp;2020/1/1</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">[See HyLFM.doc]</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">“Instantaneous isotropic volumetric 
+imaging of fast biological processes,” Nat. Methods 16, 497–500 (2019) 
+Wagner N, Norlin N, Gierten J, de Medeiros G, Balázs B, Wittbrodt J, 
+Hufnagel L, Prevedel R.</p>
+<h2>View-channel-depth (VCD) neural network</h2>
+<p style="margin-left: 40px;"><span style="font-weight: bold;"><a href="https://www.nature.com/articles/s41592-021-01058-x#citeas">Real-time volumetric reconstruction of biological dynamics with light-field microscopy and deep learning</a></span> , Nature Methods. 2021</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Wang, Z., Zhu, L., Zhang, H. <em>et al.</em> Real-time volumetric reconstruction of biological dynamics with light-field microscopy and deep learning. <em>Nat Methods</em> (2021). <a href="https://doi.org/10.1038/s41592-021-01058-x">https://doi.org/10.1038/s41592-021-01058-x</a></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Code: <a href="https://github.com/feilab-hust"><strong>feilab-hust</strong></a><strong>/<a href="https://github.com/feilab-hust/VCD-Net">VCD-Net</a></strong></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Earlier papers: <br>
+</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><a href="https://www.biorxiv.org/content/10.1101/432807v2">Deep learning light field microscopy for rapid four ...</a> Peng Fei, 2018</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><a href="https://www.biorxiv.org/content/10.1101/432807v3">Deep learning light field microscopy for video-rate ...</a> Peng Fei, 2019</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><a href="https://www.biorxiv.org/content/10.1101/432807v3.full">Deep learning light field microscopy for video-rate volumetric functional imaging of behaving animal</a> &nbsp;Peng Fei 2018<br>
+</p>
+<p style="margin-left: 80px;">based on convolutional neural network 
+(CNN). By taking a two-dimensional light field raw image as the input, 
+our model is able to output its corresponding three-dimensional volume 
+at high resolution.<br>
+</p>
+<p style="margin-left: 80px;"><img src="images%5C0002@101781_clip_image006.jpg" border="0" height="222" width="311"></p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">we trained the network by inputting 
+high-resolution 3D images of worms, which we acquired from the confocal 
+microscope with 40X objective. (Figure1. a) Various parts of worm body, 
+including head and tail where neurons are densely distributed, were 
+recorded to constitute a complete database of worm’s structure. These 
+high-resolution 3D images were further transformed into simulated 2D 
+light-field raw images through a optic model12, which we call forward 
+projection. The light-field raw images and their corresponding 
+high-resolution 3D images made training pairs during learning process.</p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">We minimize the loss of spatial resolution
+ by incorporating prior structural information of samples so that the 
+network can learn to resolve complex and highfrequency signals from 
+light field.</p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">view-channel-depth (VCD) neural network</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><a href="https://www.biorxiv.org/content/10.1101/432807v5.abstract">Network-based instantaneous recording and video-rate reconstruction of 4D biological dynamics</a>. &nbsp;&nbsp;&nbsp;Z. Wang, H. Zhang, L. Zhu, G. Li, Y. Li, Y. Yang, S. Gao, T. K. Hsiai, and P. Fei, &nbsp;bioRxiv (2019).</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 80px;">trained on synthetic data</p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">Here we propose a novel LFM strategy based
+ on a View-Channel-Depth neural network processing of light field data, 
+termed VCD-LFM. By developing a light-field projection based on wave 
+optics model, we generated plenty of synthetic light-field images from 
+high-resolution 3D images experimentally obtained beforehand, and 
+readily paired them as target and ground-truth data, respectively, for 
+network training. The 43 VCD network (VCD-Net) procedure was designed to
+ enable the extraction of multiple views from these 2D light fields, and
+ the involvement of multi-channel architecture in convolutional network 
+to transform the views back to 3D depth images, which would be compared 
+with the high-resolution ground truths to guide the optimization of 
+network. Through iteratively minimizing the loss of spatial resolution 
+by incorporating abundant structural information from training data, 
+this deep-learning VCD-Net could be gradually strengthened until capable
+ of deducing 3D, high-fidelity signals at uniform resolution across 
+depth. In addition to higher resolution and less artefact provided, once
+ the VCD-Net being properly trained, it could</p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">“Network-based instantaneous recording and video-rate reconstruction of 4D biological dynamics,” bioRxiv (2019).</p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">"... the design of the LFMNet. To better 
+model the 4D nature of the input LF image, the first layer of our 
+network is a 4D convolution, whose output is reshaped as an image and 
+then fed as input to a modified U-Net architecture, where the channels 
+are mapped to the depth axis.</p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">"Moreover, the network is designed to be 
+fully convolutional, so that it can process input LF images of different
+ sizes, and to have a limited receptive field to avoid overfitting."</p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">Derived from U-Net: Convolutional Networks for Biomedical Image Segmentation</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">“Instantaneous isotropic volumetric imaging of fast biological processes,” Nat. Methods 16, 497–500 (2019)</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 80px;">View-Channel-Depth (VCD), Synthesize lightfield images for training.</p>
+<div style="margin-left: 80px;">
+</div>
+<p style="margin-left: 80px;">"Here we propose a novel LFM strategy 
+based on a View-Channel-Depth neural network processing of light field 
+data, termed VCD-LFM. By developing a light-field projection based on 
+wave optics model, we generated plenty of synthetic light-field images 
+from high-resolution 3D images experimentally obtained beforehand, and 
+readily paired them as target and ground-truth data, respectively, for 
+network training. The VCD network (VCD-Net) procedure was designed to 
+enable the extraction of multiple views from these 2D light fields, and 
+the involvement of multi-channel architecture in convolutional network 
+to transform the views back to 3D depth images, which would be compared 
+with the high-resolution ground truths to guide the optimization of 
+network. Through iteratively minimizing the loss of spatial resolution 
+by incorporating abundant structural information from training data, 
+this deep-learning VCD-Net could be gradually strengthened until capable
+ of deducing 3D, high-fidelity signals at uniform resolution across 
+depth..."</p>
+<h2>DeepLFM</h2>
+<p style="margin-left: 40px;"><a href="https://www.osapublishing.org/abstract.cfm?uri=NTM-2019-NM3C.2">DeepLFM: Deep Learning-based 3D Reconstruction for Light Field Microscopy.</a> &nbsp;2019 X Li, H Qiao, J Wu, Z Lu, T Yan, R Zhang, X Zhang, Q Dai, &nbsp;Novel Techniques in Microscopy, NM3C. 2</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><a href="https://scholar.google.com/citations?view_op=view_org&amp;hl=en&amp;org=15442380624744264287">Tsinghua University</a> Google citations:<a href="https://scholar.google.com/citations?user=4Z5PWEEAAAAJ&amp;hl=en">&gt;&gt;</a></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><a href="https://patents.google.com/patent/US20190005701A1/en">Microscopic imaging system and method with three-dimensional refractive index tomography</a></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Code: ???</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">&nbsp;<img src="images%5C0003@101781_clip_image008.jpg" border="0" height="197" width="275"></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">&nbsp;</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><img src="images%5C0004@101781_clip_image010.jpg" border="0" height="178" width="616"></p>
+<div style="margin-left: 40px;">
+</div>
+<p>&nbsp;</p>
+<h2>EPI - Epipolar Plane Image</h2>
+<p><span style="font-weight: bold;">References </span><span style="font-weight: bold;">regarding </span><span style="font-weight: bold;">EPI:</span></p>
+<p style="margin-left: 40px;"><a href="https://en.wikipedia.org/wiki/Epipolar_geometry">Epipolar geometry - Wikipedia</a></p>
+<p style="margin-left: 40px;">R. C. Bolles, H. H. Baker, and D. H. Marimont, &nbsp;<strong>“Epipolar-plane image analysis: An approach to determining structure from motion,”</strong> <em>International Journal of Computer Vision</em>, vol. 1, no. 1, pp. 7–55, 1987.</p>
+
+<div style="margin-left: 40px;">
+</div>
+
+<p style="margin-left: 40px;">S. J. Gortler, R. Grzeszczuk, R. Szeliski, and M. F. Cohen, <strong>“The lumigraph,”</strong> in <em>Proceedings of the 23rd annual conference on Computer graphics and interactive techniques</em>. ACM, 1996, pp. 43–54.</p>
+
+<div style="margin-left: 40px;">
+</div>
+
+<p style="margin-left: 40px;">S. Vagharshakyan, R. Bregovic, and A. Gotchev, “<span style="font-weight: bold;">Light field reconstruction using shearlet transform</span>,” <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, vol. 40, no. 1, pp. 133–147, 2018.</p>
+<p><br>
+<a href="https://www.imperial.ac.uk/people/p.dragotti" target="_blank">Prof. Pier Luigi Dragotti</a>, Imperial College London</p>
+<p><span style="font-weight: bold;">Model-inspired Deep Learning for Light-Field Microscopy with Application to Neuron Localization</span>, 2021<a href="https://arxiv.org/abs/2103.06164"> &gt;&gt;</a><br>
+</p>
+<p style="margin-left: 40px;">The network performs <span style="font-weight: bold;">convolutional sparse coding</span> on input <span style="font-weight: bold;">epipolar plane
+ images </span>(EPI) [16–18], a type of spatio-angular feature constructed from
+ light-field images, and output <span style="font-weight: bold;">sparse codes</span> which indicates depth positions<br>
+</p>
+
+
+<p style="margin-left: 40px;">... solves a convolutional sparse coding 
+(CSC) problem to map Epipolar Plane Images (EPI) to corresponding sparse
+ codes. The network architecture is designed systematically by unrolling
+ the convolutional Iterative Shrinkage and Thresholding Algorithm (ISTA)
+ while the network parameters are learned from a training dataset. 
+&nbsp;&nbsp;(iterative-shrinkage-thresholding-algorithm <a href="https://github.com/bingtan72/iterative-shrinkage-thresholding-algorithm">&gt;&gt;</a>)</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">...algorithm unrolling/unfolding [12–15] 
+has emerged as a promising technique to design deep networks in a more 
+principled way by<strong> unrolling iterative methods</strong>. It 
+bridges model-based methods with learning-based methods, and this leads 
+to enhanced interpretability and better generalization ability of deep 
+networks</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">... a network using algorithm unrolling to
+ localize neurons in tissues from LFM images. The network performs 
+convolutional sparse coding on input epipolar plane images (EPI) 
+[16–18], a type of spatio-angular feature constructed from light-field 
+images, and output sparse codes which indicates depth positions</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">…</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Given raw light-field microscopy images, 
+we use the method proposed in [9] to perform calibration, conversion, 
+and purification to get an array of clean sub-aperture images. Then, the
+ horizontal and vertical positions, i.e. the x and y coordinates of 
+sources can be detected from the central sub-aperture image by finding 
+those pixels brighter than a specified threshold.</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Depth detection along the axial coordinate
+ is not trivial as it requires the proper leverage of the angular 
+information. To this end, EPIs are often used to simultaneously reveal 
+the spatial and angular information captured in 4D light-field data, as 
+shown in Figure 1. To infer depths from EPIs, one may construct an EPI 
+dictionary that consists of basic EPIs related to sources which are 
+associated to different depths. Such an EPI dictionary can be used to 
+decompose an input EPI into a sparse linear combination of basic EPIs. 
+Finding this sparse decomposition can be modelled as a convolutional 
+sparse coding problem (1)(See also [9])</p><a href="https://en.wikipedia.org/wiki/Convolutional_Sparse_Coding">Convolutional Sparse Coding - Wikipedia</a><p><span style="font-weight: bold;"><a href="https://www.researchgate.net/publication/341760676_3D_Localization_for_Light-Field_Microscopy_via_Convolutional_Sparse_Coding_on_Epipolar_Images">3D Localization for Light-Field Microscopy via Convolutional Sparse Coding on Epipolar Images</a></span><span style="font-weight: bold;">.,</span> P. Song, H. V. Jadan, C. L. Howe, P. Quicke, A. J. Foust, and P. L. Dragotti, <em>IEEE Transactions on Computational Imaging</em>, vol. 6, pp. 1017–1032, 2020.<br>
+</p>
+<p style="margin-left: 40px;">... an observed raw light-field image is calibrated and then <strong>decoded into a two-plane parameterized 4D format which leads to the epi-polar plane image (EPI).</strong>
+ The second part involves simulating a set of light-fields using a 
+wave-optics forward model for a ball-shaped volume that is located at 
+different depths. Then, a depth-aware dictionary is constructed where 
+each element is a synthetic EPI associated to a specific depth. Finally,
+ by taking full advantage of the sparsity prior and shift-invariance 
+property of EPI, 3D localization is achieved via convolutional sparse 
+coding on an observed EPI with respect to the depth-aware EPI 
+dictionary.</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">Different from existing methods, we 
+propose a new approach to address the issues in LFM imaging and provide 
+the ability to measure 3D positions of neurons from a single snapshot 
+with high accuracy, efficiency and robustness. Our approach is based on 
+the epi-polar plane image (EPI), an effective tool to analyze 3D 
+information in 4D light-field data [31]–[35]. Since each point source 
+traces out a tilted line in an EPI, the intrinsic dimension of an EPI is
+ much lower than the ambient dimension of the raw light-field data, 
+making the 3D localization highly tractable and thereby offering a path 
+toward efficient 3D localization. Moreover, by skipping the 
+time-consuming and error-prone 3D volume image reconstruction 
+explicitly, our approach reduces computational complexity significantly 
+and improves localization accuracy.</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><img src="images%5C0005@101781_clip_image012.jpg" border="0" height="167" width="307"></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><img src="images%5C0006@101781_clip_image014.jpg" border="0" height="177" width="574"></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;">According to ray-optics, each lenslet in 
+the MLA is treated as an ideal pinhole and the main &nbsp;lens is 
+treated as a thin lens. Thus, Fig. 2(a) indicates that the coordinates (<em>k, l</em>) of the lenslets and the coordinates (<em>i, j</em>) of the pixels behind each corresponding lenslet lead to a radiance-valued function <em>I</em>(<em>i, j, k, l</em>) which determines each ray uniquely by the quadruple (<em>i, j, k, l</em>) and assigned radiance value <em>I</em>. In other words,(<em>k, l</em>) index the spatial positions of lenslets while (<em>i, j</em>)
+ index the relative positions of pixels behind each corresponding 
+lenslet. Namely, each pixel behind a lenslet captures a specific <strong>perspective</strong>.</p>
+<div style="margin-left: 40px;">
+</div>
+<p><br>
+<a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Wu_Light_Field_Reconstruction_CVPR_2017_paper.pdf"><span style="font-weight: bold;">Light Field Reconstruction Using Deep Convolutional Network on EPI</span></a>.&nbsp; 
+G. Wu, M. Zhao, L. Wang, Q. Dai, T. Chai and Y. Liu,&nbsp;2017 IEEE 
+Conference on Computer Vision and Pattern Recognition (CVPR), 2017<br>
+</p>
+<p><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></p>
+<p style="margin-left: 40px;"><style>
+<!--
+br
+{
+mso-data-placement:same-cell;
+}
+table
+{
+mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\, ";
+}
+tr
+{
+mso-height-source:auto;
+mso-ruby-visibility:none;
+}
+td
+{
+border:.5pt solid windowtext;
+}
+.NormalTable{cellspacing:0;cellpadding:10;border-collapse:collapse;mso-table-layout-alt:fixed;border:none; mso-border-alt:solid windowtext .75pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.75pt solid windowtext;mso-border-insidev:.75pt solid windowtext}
+.fontstyle0
+{
+	font-family:NimbusRomNo9L-Regu;
+	font-size:10pt;
+	font-style:normal;
+	font-weight:normal;
+	color:rgb(0,0,0);
+}
+.fontstyle1
+{
+	font-size:12pt;
+	font-style:normal;
+	font-weight:normal;
+	color:rgb(0,0,0);
+}
+-->
+</style>One of our key insight is that the light field reconstruction 
+can be modeled as learning-based angular detail restoration on the 2D 
+EPI. Due to the special<br>
+structure of the EPI, the learning-based reconstruction can be 
+effectively implemented on it. Unlike the depth-based view synthesis 
+approaches, the proposed method does not require depth estimation. 
+  <br>
+  <br>
+</p>
+<div style="margin-left: 40px;">
+</div>
+<p><span style="font-weight: bold;"><a href="https://scirate.com/arxiv/2007.04538">EPI-based Oriented Relation Networks for Light Field Depth Estimation</a></span><span style="font-weight: bold;">.</span> <a href="https://scirate.com/search?q=au:Li_K+in:cs">Kunyuan Li,</a> <a href="https://scirate.com/search?q=au:Zhang_J+in:cs">Jun Zhang,</a> <a href="https://scirate.com/search?q=au:Sun_R+in:cs">Rui Sun,</a> <a href="https://scirate.com/search?q=au:Zhang_X+in:cs">Xudong Zhang,</a> <a href="https://scirate.com/search?q=au:Gao_J+in:cs">Jun Gao</a> &nbsp;2020<br>
+</p>
+<p style="margin-left: 40px;">Light field cameras record not only the 
+spatial information of observed scenes but also the directions of all 
+incoming light rays. The spatial and angular information implicitly 
+contain geometrical characteristics such as multi-view or epipolar 
+geometry, which can be exploited to improve the performance of depth 
+estimation. An Epipolar Plane Image (EPI), the unique 2D spatial-angular
+ slice of the light field, contains patterns of oriented lines. The 
+slope of these lines is associated with the disparity. Benefiting from 
+this property of EPIs, some representative methods estimate depth maps 
+by analyzing the disparity of each line in EPIs. However, these methods 
+often extract the optimal slope of the lines from EPIs while ignoring 
+the relationship between neighboring pixels, which leads to inaccurate 
+depth map predictions. Based on the observation that an oriented line 
+and its neighboring pixels in an EPI share a similar linear structure, 
+we propose an end-to-end fully convolutional network (FCN) to estimate 
+the depth value of the intersection point on the horizontal and vertical
+ EPIs. Specifically, we present a new feature-extraction module, called 
+Oriented Relation Module (ORM), that constructs the relationship between
+ the line orientations. To facilitate training, we also propose a 
+refocusing-based data augmentation method to obtain different slopes 
+from EPIs of the same scene point. Extensive experiments verify the 
+efficacy of learning relations and show that our approach is competitive
+ to other state-of-the-art methods. The code and the trained models are 
+available at https://github.com/lkyahpu/EPI_ORM.git.<br>
+  <span style="color: rgb(51, 51, 51); font-family: Oxygen, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"></span><span style="color: rgb(51, 51, 51); font-family: Oxygen, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br>
+  </span></p>
+
+<p><span style="font-weight: bold;"><a href="https://vincentqin.gitee.io/blogresource-1/light-field-depth-estimation/19.Heber_Convolutional_Networks_for_CVPR_2016_paper.pdf">Convolutional Networks for Shape from Light Field</a></span>.&nbsp; Heber, Pock, 2017&nbsp; (Austria)<br>
+</p>
+<p style="margin-left: 40px;">(not microscopic)<br>
+Convolutional Neural Networks (CNNs) have recently
+been successfully applied to various Computer Vision (CV)
+applications. In this paper we utilize CNNs to predict depth
+information for given Light Field (LF) data. The proposed
+method learns an end-to-end mapping between the 4D light
+field and a representation of the corresponding 4D depth
+field in terms of 2D hyperplane orientations. <br>
+The obtained
+prediction is then further refined in a post processing step
+by applying a higher-order regularization.
+Existing LF datasets are not sufficient for the purpose of
+the training scheme tackled in this paper. This is mainly due
+to the fact that the ground truth depth of existing datasets is
+inaccurate and/or the datasets are limited to a small number of LFs. 
+This made it necessary to generate a new synthetic LF dataset, which is 
+based on the raytracing software
+POV-Ray. This new dataset provides floating point accurate ground truth 
+depth fields, and due to a random scene
+generator the dataset can be scaled as required.
+  <br>
+</p>
+
+<p><span style="font-weight: bold;"><br>
+  <a href="https://arxiv.org/pdf/1804.02379.pdf">EPINET: A Fully-Convolutional Neural Network Using Epipolar Geometry for Depth from Light Field Images.</a></span> Shin ... Kim, 2018</p>
+<p style="margin-left: 40px;">we propose a depth estimation pipeline by 
+first reducing the number of images to be used for the computation by 
+exploiting the light field characteristics between the angular 
+directions of &nbsp;viewpoints &nbsp;</p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><a href="https://github.com/chshin10">chshin10</a>/<a href="https://github.com/chshin10/epinet">epinet</a></p>
+<div style="margin-left: 40px;">
+</div>
+<p style="margin-left: 40px;"><img src="images%5C0008@101781_clip_image018.jpg" border="0" height="220" width="398"></p>
+<p>Light Field Reconstruction Using Convolutional Network on EPI and Extended Applications (TPAMI 2019) &nbsp;<a href="https://github.com/GaochangWu">GaochangWu</a>/<a href="https://github.com/GaochangWu/lfepicnn">lfepicnn</a></p>
+<p><br>
+  <span style="font-weight: bold;"><a href="http://www.ee.iitm.ac.in/comp_photolab/papers/clfReconstructionACPR17.pdf">Learning Light Field Reconstruction from a Single Coded Image</a></span><span style="font-weight: bold;">.</span>&nbsp; 2017<br>
+</p>
+<p style="margin-left: 40px;">Light field imaging is a rich way of 
+representing the 3D
+world around us. However, due to limited sensor resolution
+capturing light field data inherently poses spatio-angular
+resolution trade-off. In this paper, we propose a deep learning based 
+solution to tackle the resolution trade-off. Specifically, we 
+reconstruct full sensor resolution light field from
+a single coded image. We propose to do this in three stages
+1) reconstruction of center view from the coded image 2)
+estimating disparity map from the coded image and center
+view 3) warping center view using the disparity to generate light field.
+ We propose three neural networks for these
+stages. Our disparity estimation network is trained in an
+unsupervised manner alleviating the need for ground truth
+disparity. Our results demonstrate better recovery of parallax from the 
+coded image and sharper reconstruction than
+dictionary learning approaches. All our results and code
+would be available at our project page [2].
+</p>
+<p style="margin-left: 40px;">
+</p>
+<p>Wikipedia:</p>
+
+<p><a href="https://en.wikipedia.org/wiki/3D_reconstruction">3D reconstruction</a></p>
+<p><a href="https://en.wikipedia.org/wiki/3D_reconstruction_from_multiple_images">3D reconstruction from multiple images</a></p>
+<p>&nbsp;</p><hr>
+
+
+<!-- Note [101781] content end -->
+
+</td></tr>
+</tbody></table>
+
+</td></tr>
+</tbody></table>
+
+<!-- End note[101781] -->
+
+
+
+
+</body></html>
