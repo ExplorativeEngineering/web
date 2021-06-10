@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title>- no title specified</title>
+	<meta name="generator" content="LibreOffice 7.1.3.2 (Windows)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2021-06-10T16:30:06.234000000"/>
+	<meta name="DCTERMS.issued" content="2021-06-10T14:24:23.715000000"/>
+	<meta name="DCTERMS.language" content="en-US"/>
+	<meta name="DCTERMS.modified" content="2021-06-10T14:25:23.951000000"/>
+	<meta name="DCTERMS.provenance" content=""/>
+	<meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/>
+	<meta name="DCTERMS.subject" content=","/>
+	<meta name="DCTERMS.title" content=""/>
+	<style type="text/css">
+		p { margin-left: 0.79in; margin-right: 0.79in; color: #000000; font-family: "Liberation Serif"; font-size: 12pt; line-height: 115% }
+		h2 { margin-left: 0.79in; margin-right: 0.79in; color: #000000; line-height: 115% }
+		h2.cjk { font-family: "NSimSun" }
+		h2.ctl { font-family: "Mangal" }
+		h3 { margin-left: 0.79in; margin-right: 0.79in; color: #000000; line-height: 115% }
+		h3.cjk { font-family: "NSimSun" }
+		h3.ctl { font-family: "Mangal" }
+	</style>
+</head>
+<body lang="en-US" text="#000000" dir="ltr"><h2 class="western">HDF5
+Data Management / Dask / PyTorch 
+</h2>
+<p><a href="https://www.hdfgroup.org/solutions/hdf5">The HDF5&reg;
+Library &amp; File Format - The HDF Group</a></p>
+<p><a name="a__Hierarchical_Data_Format_-_Wikipedia"></a><a href="https://en.wikipedia.org/wiki/Hierarchical_Data_Format">Hierarchical
+Data Format - Wikipedia</a></p>
+<p><a name="a__Managing_data_with_HDF5_files_with_Python"></a>Managing
+data with HDF5 files with Python</p>
+<p>How to use HDF5 files in Python<a href="https://www.pythonforthelab.com/blog/how-to-use-hdf5-files-in-python">&gt;&gt;</a></p>
+<p><a href="https://pnavaro.github.io/big-data/14-FileFormats.html">File
+Formats &mdash; Python tools for Big data</a></p>
+<h3 class="western"><a name="a__Relevent_Libraries_"></a>Relevent
+Libraries:</h3>
+<p><a name="a__h5py_and_PyTables_can_both_access_data_stored_in_the_HDF5_format_"></a>
+<a href="http://www.h5py.org/">h5py</a> and <a href="http://www.pytables.org/">PyTables</a>
+can both access data stored in the HDF5 format.</p>
+<p><a name="a__PyTorch_includes_parallel_Dataset___Dataloader__see_below_"></a>
+PyTorch includes parallel Dataset / Dataloader (see below)</p>
+<p><a name="a__Panda_and_Dask__see_below_"></a>PyTables, Panda and
+Dask (see below)</p>
+<h3 class="western"><a name="a__HDF5_Viewers_inspectors"></a>HDF5
+Viewers/inspectors</h3>
+<p><a name="a__HDF5_Viewer___I_have_it__"></a><a href="https://support.hdfgroup.org/products/java/hdfview">HDF5
+Viewer</a>. (I have it.)</p>
+<p><a name="a__h5pyViewer_&middot;_PyPI_&nbsp;https___github_com_ganymede42_h5pyViewer_&nbsp;_uses_earlier_python_versions__needs_fixin'____"></a>
+<a href="https://pypi.org/project/h5pyViewer">h5pyViewer &middot;
+PyPI</a> &nbsp;<a href="https://github.com/ganymede42/h5pyViewer">https://github.com/ganymede42/h5pyViewer</a>
+&nbsp;(uses earlier python versions, needs fixin'...)</p>
+<h3 class="western">Dask</h3>
+<p><a href="https://dask.org/">Dask</a> provides multi-core and
+distributed parallel execution on larger-than-memory datasets.</p>
+<p><a href="https://towardsdatascience.com/dask-and-pandas-theres-no-such-thing-as-too-much-data-284763348459">Dask
+and Pandas: There's No Such Thing as Too Much Data ...</a> &nbsp;Dask
+has 3 parallel collections namely Dataframes, Bags, and Arrays. Which
+enables it to store data that is larger than RAM.<a href="https://towardsdatascience.com/pandas-with-dask-for-an-ultra-fast-notebook-e2621c3769f">&gt;&gt;</a></p>
+<p><a href="https://docs.dask.org/en/latest/_downloads/e13fad9769fca527bad79263a3cce780/daskcheatsheet.pdf">Dask
+cheat sheet</a></p>
+<p>Dask Arrays <a href="https://examples.dask.org/array.html">&gt;&gt;</a></p>
+<p>Custom Workloads with Dask Delayed<a href="https://examples.dask.org/delayed.html">&gt;&gt;</a></p>
+<p><a name="a__Dask_Tutorial"></a>Dask Tutorial</p>
+<ul>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/00_overview.html">Introduction</a>
+	&nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/01_dask.delayed.html">Parallelize
+	code with dask.delayed</a> &nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/01x_lazy.html">Lazy
+	execution</a> &nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/02_bag.html">Bag:
+	Parallel Lists for semi-structured data</a> &nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/03_array.html">Arrays</a>
+	&nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/04_dataframe.html">Dask
+	DataFrames</a> &nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/05_distributed.html">Distributed</a>
+	&nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/06_distributed_advanced.html">Distributed,
+	Advanced</a> &nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/07_dataframe_storage.html">Data
+	Storage</a> &nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/08_machine_learning.html">Parallel
+	and Distributed Machine Learning</a> &nbsp;</p>
+	<li><p>&bull;.<a href="https://tutorial.dask.org/08_machine_learning.html#Training-on-Large-Datasets">Training
+	on Large Datasets</a>&nbsp;</p>
+</ul>
+<p><a name="a__Why_every_Data_Scientist_should_use_Dask?__"></a>Why
+every Data Scientist should use Dask?<a href="https://towardsdatascience.com/why-every-data-scientist-should-use-dask-81b2b850e15b">&gt;&gt;</a></p>
+<p><a name="a__Image_Analysis_Redux_-_Dask____&nbsp;example_notebook_uses_napari_quasiben_Napari-RL-w-fft-w-dask-3D_ipynb"></a>
+<a href="https://blog.dask.org/2020/11/12/deconvolution">Image
+Analysis Redux - Dask</a>... &nbsp;example notebook uses napari
+<a href="https://gist.github.com/quasiben">quasiben</a>/Napari-RL-w-fft-w-dask-3D.ipynb</p>
+<p><a name="a__labelled_multi-dimensional_arrays_____&nbsp;introduces_labels_in_the_form_of_dimensions__coordinates_and_attributes_on_top_of_raw_NumPy-like_arrays__&nbsp;The_package_includes_a_large_and_growing_library_of_domain-agnostic_functions_for_advanced_analytics_and_visualization_with_these_data_structures____inspired_by_and_borrows_heavily_from_pandas____particularly_tailored_to_working_with_netCDF_files__which_were_the_source_of_xarray&rsquo;s_data_model__and_integrates_tightly_with_dask_for_parallel_computing_"></a>
+<a href="http://xarray.pydata.org/en/stable">Xarray</a> package wraps
+around Dask Array, and so offers the same scalability, but also adds
+convenience when dealing with complex datasets. In particular Xarray
+can help with the following: &nbsp;Manage multiple arrays together as
+a consistent dataset ; &nbsp;Read from a stack of HDF or NetCDF files
+at once; Switch between Dask Array and NumPy with a consistent API &hellip;
+labelled multi-dimensional arrays ... &nbsp;introduces labels in the
+form of dimensions, coordinates and attributes on top of raw
+NumPy-like arrays, &nbsp;The package includes a large and growing
+library of domain-agnostic functions for advanced analytics and
+visualization with these data structures... inspired by and borrows
+heavily from pandas... particularly tailored to working with netCDF
+files, which were the source of xarray&rsquo;s data model, and
+integrates tightly with dask for parallel computing.</p>
+<h3 class="western"><a name="a__PyTorch_Dataset___Dataloader"></a>PyTorch
+Dataset / Dataloader</h3>
+<p><a name="a__HDF5_Datasets_For_PyTorch__"></a>HDF5 Datasets For
+PyTorch<a href="https://towardsdatascience.com/hdf5-datasets-for-pytorch-631ff1d750f5">&gt;&gt;</a></p>
+<p><a name="a__HDF5_Datasets_For_PyTorch__Use_HDF5_in_your_ML_workflow______read_"></a>
+<a href="https://towardsdatascience.com/hdf5-datasets-for-pytorch-631ff1d750f5">HDF5
+Datasets For PyTorch. Use HDF5 in your ML workflow ...</a> (read)</p>
+<p><a name="a__How_to_use_Pytorch_Dataloaders_to_work_with_enormously____"></a>
+<a href="https://medium.com/swlh/how-to-use-pytorch-dataloaders-to-work-with-enormously-large-text-files-bbd672e955a0">How
+to use Pytorch Dataloaders to work with enormously ...</a></p>
+<p><a name="a__How_to_create_a_custom_Dataset___Loader_in_PyTorch__from____"></a>
+<a href="https://medium.com/analytics-vidhya/how-to-create-a-custom-dataset-loader-in-pytorch-from-scratch-for-multi-band-satellite-images-c5924e908edf">How
+to create a custom Dataset / Loader in PyTorch, from ...</a></p>
+<p><a name="a__A_detailed_example_of_how_to_generate_your_data_in_parallel_with_PyTorch___"></a>
+A detailed example of how to generate your data in parallel with
+PyTorch <a href="https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel">&gt;&gt;</a></p>
+<p><a name="a__A_detailed_example_of_data_loaders_with_PyTorch"></a><a href="https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel">A
+detailed example of data loaders with PyTorch</a></p>
+<p>PyTorch.Dataset</p>
+<p><a href="https://pytorch.org/docs/stable/data.html">https://pytorch.org/docs/stable/data.html</a></p>
+<h3 class="western">PyTables / HDF5</h3>
+<p>HDF5 (PyTables) <a href="https://pandas.pydata.org/docs/user_guide/io.html#hdf5-pytables">&gt;&gt;</a></p>
+<p>PyTables is a package for managing hierarchical datasets and
+designed to efficiently and easily cope with extremely large amounts
+of data. You can download PyTables and use it for free. You can
+access documentation, some examples of use and presentations here.
+PyTables is built on top of the HDF5 library, using the Python
+language and the NumPy package.</p>
+<p><a href="https://www.pytables.org/cookbook/inmemory_hdf5_files.html">https://www.pytables.org/cookbook/inmemory_hdf5_files.html</a></p>
+<p><a href="http://www.andrewjanowczyk.com/using-matlab-pytables-hdf5-and-a-bit-of-pytorch">Using
+Matlab, Pytables (hdf5) and (a bit of) Pytorch - Andrew ...</a></p>
+<h3 class="western">Pandas</h3>
+<p><a name="a__https___pandas_pydata_org_docs_index_html"></a><a href="https://pandas.pydata.org/docs/index.html">https://pandas.pydata.org/docs/index.html</a></p>
+<p><a name="a__pandas_DataFrame__"></a>pandas.DataFrame<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html">&gt;&gt;</a></p>
+<p>pandas is well suited for many different kinds of data:</p>
+<ul>
+	<li><p>&bull;.Tabular data with heterogeneously-typed columns, as in
+	an SQL table or Excel spreadsheet &nbsp;</p>
+	<li><p>&bull;.Ordered and unordered (not necessarily
+	fixed-frequency) time-series data. &nbsp;</p>
+	<li><p>&bull;.Arbitrary matrix data (homogeneously typed or
+	heterogeneous) with row and column labels &nbsp;</p>
+	<li><p>&bull;.Any other form of observational/statistical data sets.
+	The data need not be labeled at all to be placed into a pandas data
+	structure.&nbsp;</p>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>
